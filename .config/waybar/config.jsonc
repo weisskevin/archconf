@@ -70,7 +70,33 @@
   },
 
   "group/sysctl": {
-  	"orientation": "vertical",
-	"modules":["idle_inhibitor,cpu"],
+  	"orientation": "inherit",
+	"modules":["custom/pwer_off","custom/reboot","custom/lock"],
+	"children-class": "drawer-child",
+	"drawer": {
+		"transition-duration": 500,
+		"transition-left-to-right":false,
+	},
+	"click-to-reveal": true,
+  },
+  
+  "custom/pwer_off": {
+  	"format": " \u23fb ",
+  	"on-click": "poweroff",
+	"tooltip": false, 
+  },
+
+  "custom/reboot": {
+  	"format": " \uead2 ",
+  	"on-click": "reboot",
+	"tooltip": false,
+   },
+  
+  "custom/lock": {
+  	"format": " \udb80\udf3e ",
+  	"on-click": "hyprlock",
+	"tooltip": false,
   },
 }
+ 
+
