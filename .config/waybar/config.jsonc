@@ -82,13 +82,13 @@
   
   "custom/pwer_off": {
   	"format": " \u23fb ",
-  	"on-click": "poweroff",
+  	"on-click": "sh -c 'sleep 1 && systemctl poweroff' &",
 	"tooltip": false, 
   },
 
   "custom/reboot": {
   	"format": " \uead2 ",
-  	"on-click": "reboot",
+  	"on-click": "sh -c 'sleep 1 && systemctl reboot' &",
 	"tooltip": false,
    },
   
