@@ -11,33 +11,66 @@
   "modules-left": ["user","cpu","memory","disk"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["pulseaudio/slider","network","clock","group/sysctl"],
-  
- "user": {
+ 
+ /* === modules-left-config=== */
+  "user": {
+	"format": " {user} ",
+	"avatar": "~/wallpapers/avatar.png",
+	"height": 30,
+ 	"width": 30,
+	"icon": true,
   },
 
   "cpu": {
+   "format": "  \uf4bc   {usage}%",
+   "tooltip": true,
   },
     
- "memory": {
+  "memory": {
+	"format": "  \uefc5   {used:0.1f}G / {total:0.0f}G",
   },
 
-   "disk": {
+  "disk": {
+	"format": "  \uf0c7 {specific_used:0.0f}GB/{specific_total:0.0f}GB",
+  	"unit": "GB",
   }, 
  
+  /* === modules-left-config === */
   "hyprland/workspaces": {
+	"disable-scroll": true,
+	"on-click": "activate",
+  	"persistent-workspaces": {
+		"1": [],
+		"2": [],
+		"3": [],
+		"4": [],
+	}
   },
- 
+  
+  /* === modules-right-config === */
   "pulseaudio/slider": {
+  	"min": 0,
+	"max": 100,
+	"orientation": "horizontal",
   },
    
   "network": {
+	"interval": 15,
+	"format-ethernet": " {ifname}\udb80\ude01 ",
+	"format-disconnected": "Disconnected \udb80\ude02 ",
+  	"tooltip": true,
+	"tooltip-format": "[Device]\t\t {ifname}\n[IPv4]\t\t {ipaddr}\n[Subnetmask] {netmask}\n\uf019  {bandwidthDownBytes}  \uf093  {bandwidthUpBytes}",
+	"tooltip-format-disconnected": "No network device connected..",
   },
  
   "clock":{
+	"format": "{:%H:%M %d.%m.%y}",
+	"tooltip": false,
+	"max-length":25,
   },
 
   "group/sysctl": {
   	"orientation": "vertical",
-	"modules":["cpu"],
+	"modules":["idle_inhibitor,cpu"],
   },
 }
