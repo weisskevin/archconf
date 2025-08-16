@@ -10,11 +10,11 @@
   /* === Modules Order === */
   "modules-left": ["user","cpu","memory","disk"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["pulseaudio/slider","network","clock","group/sysctl"],
+  "modules-right": ["pulseaudio/slider","pulseaudio","network","clock","group/sysctl"],
  
  /* === modules-left-config=== */
   "user": {
-	"format": " {user} ",
+	"format": " \uf2bd  kevmatz  ",
 	"avatar": "~/wallpapers/avatar.png",
 	"height": 30,
  	"width": 30,
@@ -22,16 +22,16 @@
   },
 
   "cpu": {
-   "format": "  \uf4bc   {usage}%",
+   "format": " \uf4bc  {usage}% ",
    "tooltip": true,
   },
     
   "memory": {
-	"format": "  \uefc5   {used:0.1f}G / {total:0.0f}G",
+	"format": " \uefc5   {used:0.1f}G / {total:0.0f}G  ",
   },
 
   "disk": {
-	"format": "  \uf0c7 {specific_used:0.0f}GB/{specific_total:0.0f}GB",
+	"format": " \uf0c7  {specific_used:0.0f}GB/{specific_total:0.0f}GB  ",
   	"unit": "GB",
   }, 
  
@@ -53,25 +53,34 @@
 	"max": 100,
 	"orientation": "horizontal",
   },
-   
+  
+  "pulseaudio": {
+  	"format": " \uf028   {volume}%  ",
+	"format-muted": " \ueee8     ",
+	"scroll-step": 0.0,
+	"tooltip": false,
+	"on-click-right": "pavucontrol",
+	"on-click": "pactl set-sink-mute 0  toggle"
+  }, 
+ 
   "network": {
 	"interval": 15,
-	"format-ethernet": " {ifname}\udb80\ude01 ",
+	"format-ethernet": "  {ifname}\udb80\ude01 ",
 	"format-disconnected": "Disconnected \udb80\ude02 ",
   	"tooltip": true,
-	"tooltip-format": "[Device]\t\t {ifname}\n[IPv4]\t\t {ipaddr}\n[Subnetmask] {netmask}\n\uf019  {bandwidthDownBytes}  \uf093  {bandwidthUpBytes}",
+	"tooltip-format": "[Device]\t\t{ifname}\n[IPv4]\t\t{ipaddr}\n[Subnetmask] {netmask}\n\uf019  {bandwidthDownBytes}  \uf093  {bandwidthUpBytes}",
 	"tooltip-format-disconnected": "No network device connected..",
   },
  
   "clock":{
-	"format": "{:%H:%M %d.%m.%y}",
+	"format": "  {:%H:%M %d.%m.%y}  ",
 	"tooltip": false,
 	"max-length":25,
   },
 
   "group/sysctl": {
   	"orientation": "inherit",
-	"modules":["custom/pwer_off","custom/reboot","custom/lock"],
+	"modules":["custom/pwer_off", "custom/lock", "custom/reboot"],
 	"children-class": "drawer-child",
 	"drawer": {
 		"transition-duration": 500,

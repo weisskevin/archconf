@@ -8,10 +8,113 @@
 
 window#waybar {
   background: rgba(13, 20, 29, 0.8);
-  border-bottom: 0.5px solid rgba(251,153,92,1);
   color: rgba(250,224,144,1); 
 }
 
 window#waybar.hidden {
   opacity: 0.2;
 }
+
+tooltip {
+  background: rgba(13, 20, 29, 1.0);
+  border: 0.5px solid rgba(251, 153, 92, 0.6);
+}
+
+tooltip label {
+  color: rgba(250,224,144,1);
+}
+
+
+#user{
+ margin-left:0px;
+ margin-right:5px;
+ border-radius: 10px;
+ background: linear-gradient(rgba(65,94,117,1.),rgba(160, 32, 240, 1.0));
+ background-size: 600% 600%;
+ animation: gradientFlow 1s ease infinite
+}
+
+#cpu {
+ margin-left:5px;
+ border-top-left-radius: 10px;
+ border-bottom-left-radius: 10px;
+}
+
+#disk {
+ margin-right: 5px;
+ border-top-right-radius: 10px;
+ border-bottom-right-radius: 10px;
+}
+
+#pulseaudio-slider {
+  padding: 0 10px;
+  background-color: rgba(12,65,88,0.5);
+  opacity: 0.8;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  min-width: 100px;
+}
+
+#pulseaudio {
+  background-color: rgba(12,65,88,0.5);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  min-width: 100px;
+}
+
+#pulseaudio-slider slider {
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 1;
+  border: none;
+  background-image: none;
+  background-color: white;
+  box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+  background-color: rgba(0,12,32,1.);
+  border-radius: 15px;
+  min-height: 10px;
+}
+
+#pulseaudio-slider highlight {
+  min-height: 10px;
+  background-color: rgba(140,157,187,0.8);
+}
+
+#network{
+ margin-left:10px;
+ margin-right:5px;
+ border-radius: 10px;
+ background: rgba(20, 92, 107, 0.6); 
+}
+
+#clock{
+  margin-left:10px;
+  margin-right:10px;
+  border-radius: 15px;
+  background-color: rgba(28, 111, 129, 0.8);
+}
+
+#user {
+ background: linear-gradient(rgba(65,94,117,1.),rgba(160, 32, 240, 1.0));
+ background-size: 600% 600%;
+ animation: gradientFlow 1s ease infinite; 
+}
+
+#cpu {
+ background: rgba(28, 111, 129, 0.5);
+}
+
+#memory {
+ background: rgba(20, 92, 107, 0.5)
+}
+
+#disk {
+ background: rgba(12, 65, 76, 0.5)
+}
+
+
+
+ 
