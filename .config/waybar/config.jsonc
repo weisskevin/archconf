@@ -8,17 +8,14 @@
   "gtk-layer-shell": true,
   
   /* === Modules Order === */
-  "modules-left": ["user","cpu","memory","disk"],
+  "modules-left": ["custom/archicon","cpu","memory","disk"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["pulseaudio/slider","pulseaudio","network","clock","group/sysctl"],
  
  /* === modules-left-config=== */
-  "user": {
-	"format": " \uf2bd  kevmatz  ",
-	"avatar": "~/wallpapers/avatar.png",
-	"height": 30,
- 	"width": 30,
-	"icon": true,
+  "custom/archicon": {
+	"format": "   ",
+	"tooltip": false,
   },
 
   "cpu": {
