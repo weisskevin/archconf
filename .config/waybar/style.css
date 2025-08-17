@@ -24,11 +24,12 @@ tooltip label {
   color: rgba(250,224,144,1);
 }
 
+/* Left */
 
 #user{
- margin-left:0px;
  margin-right:5px;
- border-radius: 10px;
+ border-top-right-radius: 10px;
+ border-bottom-right-radius: 10px;
  background: linear-gradient(rgba(65,94,117,1.),rgba(160, 32, 240, 1.0));
  background-size: 600% 600%;
  animation: gradientFlow 1s ease infinite
@@ -38,14 +39,23 @@ tooltip label {
  margin-left:5px;
  border-top-left-radius: 10px;
  border-bottom-left-radius: 10px;
+ background-color: rgba(28, 111, 129, 0.5);
+}
+
+#memory {
+ background: rgba(20, 92, 107, 0.5)
 }
 
 #disk {
  margin-right: 5px;
  border-top-right-radius: 10px;
  border-bottom-right-radius: 10px;
+ background: rgba(12, 65, 76, 0.5)
 }
 
+/* Middle */
+
+/* Right */
 #pulseaudio-slider {
   padding: 0 10px;
   background-color: rgba(12,65,88,0.5);
@@ -68,7 +78,7 @@ tooltip label {
   opacity: 1;
   border: none;
   background-image: none;
-  background-color: white;
+  background-color: rgba(250,224,144,1);
   box-shadow: none;
 }
 
@@ -80,7 +90,7 @@ tooltip label {
 
 #pulseaudio-slider highlight {
   min-height: 10px;
-  background-color: rgba(140,157,187,0.8);
+  background-color: rgba(221,195,118,0.8);
 }
 
 #network{
@@ -97,23 +107,19 @@ tooltip label {
   background-color: rgba(28, 111, 129, 0.8);
 }
 
-#user {
- background: linear-gradient(rgba(65,94,117,1.),rgba(160, 32, 240, 1.0));
- background-size: 600% 600%;
- animation: gradientFlow 1s ease infinite; 
+#custom-pwer_off{
+  color: rgba(203,35,35,1);
 }
 
-#cpu {
- background: rgba(28, 111, 129, 0.5);
+#custom-reboot{
+ color: rgba(255,248,27,1);
 }
 
-#memory {
- background: rgba(20, 92, 107, 0.5)
+#custom-lock{
+ color: rgba(35,195,33,1);
 }
 
-#disk {
- background: rgba(12, 65, 76, 0.5)
-}
+
 
 
 
