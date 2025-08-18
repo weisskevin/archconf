@@ -10,7 +10,7 @@
   /* === Modules Order === */
   "modules-left": ["custom/archicon","cpu","memory","disk"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["pulseaudio/slider","pulseaudio","network","clock","group/sysctl"],
+  "modules-right": ["custom/godot","custom/discord","custom/firefox","pulseaudio/slider","pulseaudio","network","clock","group/sysctl"],
  
  /* === modules-left-config=== */
   "custom/archicon": {
@@ -45,6 +45,24 @@
   },
   
   /* === modules-right-config === */
+  "custom/firefox":{
+  	"format": "  <span font='16' rise='3000'>\uf269</span>   ",
+	"on-click": "firefox",
+	"tooltip": false,
+  },
+
+  "custom/godot":{
+  	"format": "  <span font='20' rise='3000'>\ue7ee</span>   ",
+	"on-click": "godot",
+	"tooltip": false,
+  },
+
+  "custom/discord":{
+  	"format": "  <span font='16' rise='3000'>\uf1ff</span>    ",
+	"on-click": "discord",
+	"tooltip": false,
+  },
+
   "pulseaudio/slider": {
   	"min": 0,
 	"max": 100,

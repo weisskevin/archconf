@@ -54,6 +54,7 @@ tooltip label {
 }
 
 /* Middle */
+
 #workspaces
 {
  background-color: rgba(12,65,88,0.5);
@@ -72,6 +73,28 @@ tooltip label {
 }
 
 /* Right */
+
+#custom-firefox
+{
+  background: rgba(12,65,76,0.5);
+  margin-right: 10px;  
+  border-radius: 15px;
+}
+
+#custom-godot
+{
+  background: rgba(12,65,76,0.5);
+  margin-right: 10px;  
+  border-radius: 15px;
+}
+
+#custom-discord
+{
+  background: rgba(12,65,76,0.5);
+  margin-right: 10px;  
+  border-radius: 15px;
+}
+
 #pulseaudio-slider {
   padding: 0 10px;
   background-color: rgba(12,65,88,0.5);
