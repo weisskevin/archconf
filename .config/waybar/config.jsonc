@@ -10,7 +10,7 @@
   /* === Modules Order === */
   "modules-left": ["custom/archicon","cpu","memory","disk"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["custom/godot","custom/discord","custom/firefox","pulseaudio/slider","pulseaudio","network","clock","group/sysctl"],
+  "modules-right": ["custom/vscode","custom/godot","custom/discord","custom/firefox","pulseaudio/slider","pulseaudio","network","clock","group/sysctl"],
  
  /* === modules-left-config=== */
   "custom/archicon": {
@@ -60,6 +60,12 @@
   "custom/discord":{
   	"format": "  <span font='16' rise='3000'>\uf1ff</span>    ",
 	"on-click": "discord",
+	"tooltip": false,
+  },
+
+  "custom/vscode":{
+  	"format": "  <span font='16' rise='3000'>\ue8da</span>    ",
+	"on-click": "code",
 	"tooltip": false,
   },
 

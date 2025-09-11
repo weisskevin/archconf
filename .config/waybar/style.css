@@ -88,6 +88,13 @@ tooltip label {
   border-radius: 15px;
 }
 
+#custom-vscode
+{
+  background: rgba(12,65,76,0.5);
+  margin-right: 10px;  
+  border-radius: 15px;
+}
+
 #custom-discord
 {
   background: rgba(12,65,76,0.5);
