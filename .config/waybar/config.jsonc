@@ -81,7 +81,7 @@
 	"scroll-step": 0.0,
 	"tooltip": false,
 	"on-click-right": "pavucontrol",
-	"on-click": "pactl set-sink-mute 0  toggle"
+	"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
   }, 
  
   "network": {
