@@ -95,7 +95,7 @@
   },
  
   "clock":{
-	"format": "  {:%H:%M \udb82\udd54  | %d.%m.%y \uf073}  ",
+	"format": "  {:%H:%M \udb82\udd54  %d.%m.%y \uf073}  ",
 	"tooltip": false,
 	"max-length":25,
   },
